@@ -1,0 +1,330 @@
+:root{
+--neutral: #232946;
+--base: #fffffe;
+--focus: #121629;
+--accent: #eebbc3;
+--secondary: #271c19;
+--acc: #b8c1ec;
+ --bg: #F0DBA5;
+  --text: #151515;
+  --yellow: #EDB74D;
+  --red: #EB6666;
+  --green: #6FB18A;
+}
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body{
+  font-family:  noto-serif;
+  text-align: center;
+  background-color: var(--neutral);
+}
+
+h1, h2, h3, h4, h5, h6{
+ font-family: "montserrat";
+}
+h1{
+
+  font-size: 800%;
+  animation-name: example;
+  animation-duration: 76s;
+  animation-iteration-count: infinite;
+ font-family: Monoton;
+
+}
+#cert{font-size: 400%;
+  animation-name: example2;
+  animation-duration: 76s;
+  animation-iteration-count: infinite;
+ font-family: MONTSERRAT;
+ animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+ }
+
+#navbar{
+  display:flex;
+  flex-wrap: wrap;
+ justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--neutral);
+  padding: 20px ;
+  font-size: 20px;
+  border-bottom: 1px solid var(--focus);
+  z-index: 1;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+   
+  
+}
+
+.nav-links a{
+  text-decoration: none;
+  padding: 0 15px;
+  color: var(--base);
+
+  font-family: "Montserrat";
+   font-size: 30px;
+   letter-spacing: 1px;
+}
+
+.nav-links a:hover{color: black;
+font-size: 31px;
+transition:  0.3s ease-in;}
+
+section{
+  min-height: 100vh;
+  padding: 70px 0;
+}
+
+#welcome-section {
+  position: relative;
+   background-image: url('https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=1060&t=st=1704394381~exp=1704394981~hmac=724b5274ee66b2fadeb9b46e205681a84e67515da4e3038071f7ab7e058323c1');
+   background-repeat: no-repeat;
+   background-size: cover;
+  color: var(--base);
+  display: flex;
+  flex-direction: column;
+  margin:  0px;
+animation-name: example;
+  animation-duration: 76s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes example {
+  0%   {color:red; }
+  25%  {color:yellow; }
+  50%  {color:blue; }
+  75%  {color:green; }
+  100% {color:red;}
+}
+
+#welcome-section h1{
+  margin-top: 30vh;
+}
+
+#welcome-section p{
+ 
+  font-size: 59px;
+  margin: 25px 0;
+  font-style: italic;
+}
+
+#projects {
+  padding: 0px;
+background-image: url('https://img.freepik.com/free-photo/view-desk-arrangement-with-laptop_23-2149073072.jpg?w=1060&t=st=1704395805~exp=1704396405~hmac=eeeff9bc15bcab54f9464d2cd0b7106d1558227c9891511b4586e99a8bfaf9df');
+   background-repeat: no-repeat;
+   background-size: cover;
+color: var(--neutral);
+}
+#pprojects {
+background-color: var(--neutral);
+padding: 40px;
+}
+#projects h1{
+  border-bottom: 5px solid var(--neutral);
+  width: fit-content;
+  margin: auto;
+ 
+}
+#projects .projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+padding: 20px;
+place-items: center;
+max-width: 1200px;
+margin: auto;
+
+}
+.project-tile {
+  
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+   border-radius: 10px;
+}
+
+#projects .project-tile{
+height: 300px;
+width: 100%;
+display: flex;
+position: relative;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 15, 370, 0.5);
+color: black;
+text-decoration: none;
+
+}
+
+#projects .project-tile img{
+display: flex;
+  object-fit: cover;
+  margin: auto;
+  margin-top: ;
+ 
+}
+
+#projects .project-tile p{
+  
+font-size: 25px;
+padding: 10px;
+background-color: gray;
+bottom: 0;
+width: 95%;
+position: absolute;
+font-family: "montserrat";
+border-radius:0 0  10px 10px;
+
+}
+ #projects .project-tile p:hover {
+   background-color: black;
+   color: blue;
+ }
+
+#projects .project-tile span{
+opacity: 9%;
+padding: 0 5px;
+}
+
+#projects .project-tile span{
+ 
+opacity: 100%;
+color: silver;
+transition: opacity 0.6s ease-in;
+font-weight: bold;
+}
+
+.show-all{
+  text-decoration: none;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  
+  padding: 10px 15px;
+ 
+  color:black;
+  font-size: 25px;
+  transition: background-color 0.2s ease-in;
+  font-family: "montserrat";
+  border-radius: 5px;
+
+background-color: rgba(0, 155, 410);
+ 
+}
+
+.show-all:hover{
+  background-color: black;
+  color: var(--base);
+    transform:  size 70%;
+  
+}
+
+
+ 
+  
+
+ h1{
+  margin:100px;
+}
+
+.cofee-question{
+ color: var(--accent);
+  font-size: 40px;
+ 
+  font-style: italic;
+}
+
+.social-medias{
+  display: flex;
+  flex-wrap: wrap;
+ /* max-width:  900px;*/
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 40px;
+ 
+}
+
+.social-mediass{
+  display: flex;
+  flex-wrap: wrap;
+ /* max-width:  900px;*/
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 40px;
+
+}
+
+  .social-media{ 
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--base);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .social-media:hover{ 
+    transform: translateY(10px);
+  }
+
+  footer{
+    border-top: 3px solid var(--accent);
+    color: orange;
+    font-size: 25px;
+    padding: 30px;
+  }
+
+  @media only screen and (max-width : 700px){
+h1{
+  font-size: 490%;
+}
+#projects .project-tile{
+  height: 400px;
+  width: 100%;
+}
+  }
+   #footer{
+    
+   color: rgba(0, 155, 410);
+
+     font-weight: 900;
+     font-family:"montserrat";
+     letter-spacing: 2px;
+   }
+
+
+
+#cert {
+  width: 100px;
+  height: 100px;
+  display: inline;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 13s;
+  
+  animation-iteration-count: infinite;
+ 
+}
+
+@keyframes example3 {
+  0%   {color:green; left:0px; top:-65px;}
+
+25% { color:darkgreen; left:0px; top:70px;}
+  50% { color:darkgreen; left:0px; top:-65px;}
+75% { color:darkgreen; left:0px; top:70px;}
+
+   100%   {color:green; left:0px; top:-65px;}
+}
+
+/*live backgrounds*/
